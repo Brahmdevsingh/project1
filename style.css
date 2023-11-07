@@ -1,0 +1,681 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --c-dark: #111111;
+    --c-grey: #222222;
+    --c-light: #f6f6f6;
+    --c-brand: #64b639;
+}
+
+/* GLobal CSS */
+.section {
+    padding: 50px 120px;
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--c-light);
+    color: var(--c-dark);
+}
+
+.btn {
+    background-color: var(--c-brand);
+    padding: 10px 30px;
+    border-radius: 4px;
+    color: var(--c-light);
+    font-weight: 600;
+    width: fit-content;
+}
+
+.title {
+    font-size: 42px;
+    margin: 20px 0;
+    font-size: 50px;
+    font-weight: bolder;
+
+}
+
+
+
+/* Navbar css */
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.458);
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+}
+
+.navbar .burger {
+    display: none;
+}
+
+.navbar .logo {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.navbar .navlink ul {
+    width: 500px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 1st Section CSS */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero .main .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hero .main .content .para {
+    text-align: justify;
+}
+
+.hero .main .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero .main .image img {
+    width: 360px;
+    border-radius: 30%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.458);
+
+}
+
+/* Beach Yoga CSS */
+
+.beach {
+    width: 100%;
+    padding: 50px 120px;
+    gap: 32;
+}
+
+.beach .row {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.beach .row {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.beach .row .img img {
+    width: 70vh;
+    border-radius: 20%;
+}
+
+
+/* Service CSS */
+
+.service .cardrow {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.service .cardrow .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 30%;
+    height: 60vh;
+    box-shadow: 2px 2px 10px rgba(72, 147, 89, 0.458);
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+    transition: all 200ms ease-in-out;
+}
+
+.service .cardrow .card:hover {
+    transform: scale(1.06);
+}
+
+.service .cardrow .card .cardTitle {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.service .cardrow .card-highlight .topline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--c-brand);
+    padding: 4px;
+    position: absolute;
+    top: 0;
+
+}
+
+.service .cardrow .card .cardContent ul {
+
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.service .cardrow .card .btn {
+    background-color: var(--c-brand);
+    color: var(--c-light);
+    font-weight: 500;
+    padding: 10px 30px;
+}
+
+.service .cardrow .card-highlight {
+    border-width: 2px;
+    border-color: var(--c-brand);
+    border-style: solid;
+}
+
+/* Contacts CSS */
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.contacts .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.contacts .main .social {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+
+.contacts .main .social .links {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+
+.contacts .main .forms {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: centers;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.contacts .main .forms input {
+    width: 70%;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    background-color: var(--c-light);
+    border-color: var(--c-brand);
+}
+
+.contacts .main .forms .btn {
+    border: none;
+}
+
+/* About Page CSS */
+
+.herox {
+    width: 100%;
+    height: 100vh;
+}
+
+.herox .breathx {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.herox .breathx .mainx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+.herox .breathx .mainx .titlex {
+    font-size: 44px;
+    font-weight: bolder;
+}
+
+.herox .breathx .mainx .parax {
+    text-align: justify;
+    font-size: 22px;
+}
+
+.herox .breathx .mainx .btnx {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.herox .breathx .imagex img {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.458);
+
+}
+
+
+/* About Section */
+.aboutUs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutUs .about {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px
+}
+
+.aboutUs .about .breif {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutUs .about .breif .para {
+    font-size: 22px;
+    text-align: justify;
+}
+
+.aboutUs .about .imageAbout img {
+    border-radius: 30%;
+    box-shadow: 2px 2px 10px rgba(72, 147, 89, 0.458);
+    width: 360px;
+}
+
+/* Team CSS */
+
+.team .cardrow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.team .teamMembers {
+    font-size: 60px;
+    font-weight: bolder;
+    padding: 30px;
+}
+
+.team .cardrow .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(72, 147, 89, 0.458);
+    padding: 60px;
+    border-radius: 20%;
+    transition: all 200ms ease-in-out;
+}
+
+.team .cardrow .card:hover {
+    transform: scale(1.06);
+}
+
+.team .cardrow .card .desc {
+    text-align: justify;
+}
+
+.team .cardrow .card .dp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .cardrow .card .dp img {
+    width: 50%;
+    border-radius: 60%;
+}
+
+
+
+/* Tablet Responsive */
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 20px 36px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 20px 36px;
+
+    }
+
+    .navbar .logo {
+        font-size: 28px;
+    }
+
+
+    .navbar .navlink {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 60%;
+        height: 90vh;
+        background-color: var(--c-grey);
+        color: var(--c-light);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 200ms ease-in-out;
+        transform: translateX(100%);
+    }
+
+    .navbar.open .navlink {
+        transform: translateX(0%);
+    }
+
+    .navbar .navlink ul {
+        flex-direction: column;
+        height: 40vh;
+    }
+
+    .navbar .burger {
+        display: block;
+        cursor: pointer;
+        font-size: 22px;
+        color: #222222;
+        transition: all 200ms ease-in-out;
+    }
+
+    .navbar .burger:hover {
+        color: var(--c-brand);
+    }
+
+    /* Hero section */
+
+
+    .hero .main {
+        flex-direction: column-reverse;
+        gap: 64px;
+    }
+
+    .hero .main .content {
+        align-items: center;
+        gap: 32px;
+    }
+
+    .hero .main .content .para {
+        text-align: center;
+    }
+
+    .hero .main .image {
+        width: 100%;
+    }
+
+    .hero .main .image img {
+        height: 30vh;
+        width: 100%;
+    }
+
+    /* About Section */
+    .aboutUs .about {
+        flex-direction: column-reverse;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .aboutUs .about .breif {
+        align-items: center;
+    }
+
+    .aboutUs .about .breif .para {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .aboutUs .about .imageAbout img {
+        border-radius: 30%;
+        box-shadow: 2px 2px 10px rgba(72, 147, 89, 0.458);
+        width: 360px;
+    }
+
+    /* Section 2 */
+
+
+    .beach {
+        gap: 32;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .beach .row {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 32px;
+    }
+
+    .beach .row .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .beach .row .content .para {
+        text-align: center;
+    }
+
+    .beach .row .img img {
+        width: 50vh;
+    }
+
+
+    /* Section 3 */
+
+    .service .cardrow {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .service .cardrow .card {
+
+        padding: 60px;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* Section 4 */
+
+
+    /* About Us Hero CSS */
+
+
+    /* Team CSS */
+
+    .team .cardrow {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team .teamMembers {
+        font-size: 32px;
+    }
+
+    .team .cardrow .card {
+        padding: 60px;
+        height: 100%;
+        width: 100%
+    }
+
+}
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 640px) {
+
+    .section {
+        padding: 24px 16px;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 8px 16px;
+
+    }
+
+
+    /* Hero Section */
+
+    .hero .main {
+        gap: 18px;
+    }
+
+    .hero .main .content {
+        gap: 16px;
+    }
+
+
+    .hero .main .content .para {
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    .hero .main .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero .main .image img {
+        width: 70%;
+
+    }
+
+    /* Section 1 */
+    .beach .row .content .para {
+        text-align: justify;
+    }
+
+    /* Service Section */
+
+
+    /* contact section */
+    .contacts .main {
+        flex-direction: column;
+    }
+
+
+    /* About Us Hero CSS */
+
+    .herox .breathx .mainx .titlex {
+        font-size: 32px;
+    }
+
+    .herox .breathx .mainx .parax {
+        font-size: 16px;
+    }
+
+    /* Team CSS */
+
+    .team .cardrow .card {
+        height: 70vh;
+        width: 100%
+    }
+
+    .herox .breathx .imagex img {
+        width: 100%;
+        height: 30vh;
+    }
+}
